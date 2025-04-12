@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {font-family: "Noto Sans KR", sans-serif;color:#333;}
+.counter_wrap {height:100vh;padding:70px;border-radius: 20px 20px 0 0;border:solid 1px #e1e1e1;}
+.ch_inner {width:92%;max-width:1080px;margin:0 auto;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.count_wrap {width:100%;display:flex;}
+.count_wrap li {width:50%;padding:20px 50px;display: flex;align-items: flex-end;justify-content: flex-start; text-align: center;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn_wrap {width:100%;display:flex;padding:20px;border-radius: 10px;background:#555;}
+.btn {width:50%;padding:0 30px;display:flex;gap:20px;}
+.btn button {
+  width:50px;
+  height:auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+   rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+   rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+   rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+   rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+   rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   font-size:var(--font-size-16);
+   font-weight:var(--font-sb);
+   color:#333;
+   background:#fff;
+  }
+.btn button:hover {background:#888;color:#fff;}
+.btn button:active {
+  background-color: #032133; /* 클릭했을 때 */
+  transform: scale(0.98); /* 살짝 눌리는 느낌 */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
