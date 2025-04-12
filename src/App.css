@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 * {font-family: "Noto Sans KR", sans-serif;color:#333;}
-.counter_wrap {height:100vh;padding:70px;border-radius: 20px 20px 0 0;border:solid 1px #e1e1e1;}
-.ch_inner {width:92%;max-width:1080px;margin:0 auto;}
+.counter_wrap {height:100vh;padding: 3em 0;border-radius: 20px 20px 0 0;border:solid 1px #e1e1e1;}
+.ch_inner {width:92%;max-width:720px;margin:0 auto;}
 
 .count_wrap {width:100%;display:flex;}
-.count_wrap li {width:50%;padding:20px 50px;display: flex;align-items: flex-end;justify-content: flex-start; text-align: center;}
+.count_wrap li {width:50%;padding:20px 0;display: flex;align-items: flex-end;justify-content: center; text-align: center;}
 
-.btn_wrap {width:100%;display:flex;padding:20px;border-radius: 10px;background:#555;}
-.btn {width:50%;padding:0 30px;display:flex;gap:20px;}
+.btn_wrap {width:100%;display:flex;padding:30px 0;border-radius: 10px;background:#555;}
+.btn {width:50%;display:flex;gap:20px;justify-content: center;}
 .btn button {
   width:50px;
   height:auto;
@@ -36,3 +36,18 @@
   transform: scale(0.98); /* 살짝 눌리는 느낌 */
 }
 
+@media screen and (max-width:1080px) {
+  .btn_wrap {flex-wrap:wrap;padding:20px;}
+  .btn {flex-wrap:wrap;}
+}
+@media screen and (max-width:720px) {
+  .counter_wrap h1 {font-size:var(--font-size-36);}
+  .counter_wrap h2 {font-size:var(--font-size-28);}
+  .count_wrap li {padding: 20px 30px;}
+  .btn_wrap {gap:16px;}
+  .btn {width:100%;}
+}
+
+@media screen and (max-width:720px) {
+  .btn button {width:40px;}
+}

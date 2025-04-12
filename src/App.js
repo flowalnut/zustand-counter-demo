@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="counter_wrap">
       <div className="ch_inner">
-        <ul className="count_wrap">
+        <div className="count_wrap">
           <li><h1 className="fs_50 fw_bl">count:{count}</h1></li>
           <li><CountBox /></li>
-        </ul>
+        </div>
         <div className="btn_wrap">
           <div className="btn">
             <button onClick = {increase}>+1</button>
